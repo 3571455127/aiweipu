@@ -1,0 +1,27 @@
+<div class="thank">
+    <div class="container">
+        <div class="row">
+            <h5>Thanks for your inquiry!</h5>
+            <p>Our Professional Team Will Contact With You In 24 Hours</p>
+            <a class="link" href="/" onclick="history.go(-1)"><span id="sec">5</span>s Back Home</a>
+            <img class="back" src="__PUBLIC__/www/images/back.png" alt="back" onClick="javascript :history.go(-1);" />
+        </div>
+    </div>
+</div>
+
+<script src="__PUBLIC__/www/js/jquery.js"></script>
+<script>
+    $(function () {
+        setTimeout("lazyGo();", 1000);
+    });
+
+    function lazyGo() {
+        var sec = $("#sec").text();
+        $("#sec").text(--sec);
+        if (sec > 0)
+            setTimeout("lazyGo();", 1000);
+        else
+
+            javascript: history.back(-1);
+    }
+</script>
